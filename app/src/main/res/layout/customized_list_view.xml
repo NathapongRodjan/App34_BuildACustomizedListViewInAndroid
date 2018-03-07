@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFCC">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/imgAnimal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/tiger" />
+
+        <TextView
+            android:id="@+id/txtAnimalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imgAnimal"
+            android:text="Name of the Animal : "
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtAnimalPower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtAnimalSpeed"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="11dp"
+            android:layout_toEndOf="@+id/imgAnimal"
+            android:text="Animal Power : "
+            android:textColor="#00CC00"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtAnimalSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgAnimal"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/imgAnimal"
+            android:text="Animal Speed : "
+            android:textColor="#00CC00"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>
